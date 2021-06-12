@@ -1,3 +1,9 @@
+"""
+This module extracts features from raw data and create a new dataframe that has new features and all the data
+
+@author: Hung Nguyen
+"""
+
 import pandas as pd
 import glob
 import numpy as np
