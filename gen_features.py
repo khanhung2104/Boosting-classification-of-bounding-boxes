@@ -1,7 +1,8 @@
 """
 This module extracts features from raw data and create a new dataframe that has new features and all the data
 
-@author: Hung Nguyen
+Author: Hung Nguyen
+Date Created: 13/06/2021
 """
 
 import pandas as pd
