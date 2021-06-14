@@ -24,10 +24,9 @@ def readcsv(the_path):
     li = []
     
     bigX, bigY, bigZ = [],[],[]
-#     i = 0
+
     for filename in all_files:
-#         i += 1
-#         if i < 3:
+
             a_df = pd.read_csv(filename)
             li.append(a_df)
             a_df['count']=a_df.groupby('filename')['Name'].transform('count').values
@@ -47,10 +46,9 @@ def readxml(the_path):
     """
     all_files = list(glob.iglob(os.path.join (the_path, "*.xml")))
     li = []
-#     i = 0
+
     for fn in all_files:
-#         i += 1
-#         if i < 3:
+
             dfcols = ['Name','xmin', 'ymin', 'xmax','ymax', 'filename']
 
             mytree = ET.parse(fn)
